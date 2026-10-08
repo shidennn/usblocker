@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.hypothesis/
+build/
+out/
+*.egg-info/
+# never commit real key material
+*.mlk
+!tests/vectors/**

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mylocker"
+version = "0.0.1"
+description = "USB-key protected folder encryption for Windows (bitirme projesi)"
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography>=42",
+    "argon2-cffi>=23.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "hypothesis>=6"]
+
+[tool.setuptools]
+packages = ["mlref"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
