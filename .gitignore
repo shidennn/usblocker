@@ -1,11 +1,37 @@
-.venv/
+# Python
 __pycache__/
-*.pyc
-.pytest_cache/
-.hypothesis/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Build and Packaging
 build/
-out/
+dist/
 *.egg-info/
-# never commit real key material
-*.mlk
-!tests/vectors/**
+*.spec
+
+# C/C++ Compiled Objects
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.lib
+*.out
+*.app
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Specific
+MyLocker/
+TEST_VAULT/
+.mylocker/
+scratch/
+libsodium_unzipped/
+*.zip
